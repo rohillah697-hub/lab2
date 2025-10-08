@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header, nav, section, footer {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #ab2b2b94;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #a51616;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    article {
+      background: #f4f4f4;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4a2184;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #3d297f;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" style="position:absolute; left:-999px;">Skip to main content</a>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal portfolio website!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero">
+      <img src="pic.jpg" alt="Profile picture of Harsh">
+      <h2>Hello, I'am Harsh</h2>
+      <p>A passionate web developer and designer eager to build modern web experiences.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a front-end web developer who enjoys creating clean, responsive, and user-friendly websites. I love working with HTML, CSS, and JavaScript to bring designs to life.</p>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript & React</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Project 1: Portfolio Website</h3>
+        <p>A simple and responsive personal portfolio website built using HTML and CSS.</p>
+      </article>
+
+      <article>
+        <h3>Project 2: To-Do App</h3>
+        <p>A JavaScript-based to-do list application that allows users to add, edit, and delete tasks.</p>
+      </article>
+
+      <article>
+        <h3>Project 3: Weather Dashboard</h3>
+        <p>A weather app using an API to display real-time weather conditions for any city.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p> 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
